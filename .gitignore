@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+.python-version
+
+# --- Environment & Secrets ---
+.env
+.wandb/
+wandb/
+
+# --- IDE/Editor ---
+.vscode/
+.idea/
+.DS_Store  # macOS specific
+
+# --- Data & Checkpoints ---
+# Don't track large datasets or binary model checkpoints
+*.ckpt
+*.h5
+*.weights
+*.npz
+data/
+outputs/
+
+# --- JAX/JIT specific ---
+# Sometimes JAX caches things in these folders
+.jax_cache/
